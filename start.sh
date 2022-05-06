@@ -15,7 +15,6 @@ minikube status
 if [ "$?" != '0' ]; then	
     minikube start --nodes 2
     minikube addons enable ingress
-    kubectl create ns demo
 fi
 
 minikube image load "$IMAGE"
