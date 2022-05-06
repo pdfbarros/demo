@@ -1,6 +1,6 @@
 #!/bin/sh 
 DEBUG=${DEBUG:=0}
-IMAGE=${IMAGE:=demo:1.0.0}
+IMAGE=${IMAGE:=demo:2.0.0}
 FORCE=$1
 
 [ ${DEBUG} -eq 1 ] && set -x

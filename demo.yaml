@@ -18,7 +18,8 @@ spec:
     image: docker.io/library/__IMAGE__ 
     ports:
       - containerPort: __PORT__
-        name: tcp-port
+        name: udp-port
+        protocol: UDP
         
 ---
 apiVersion: v1
@@ -31,9 +32,9 @@ spec:
     app.kubernetes.io/name: demo
   ports:
   - name: demo
-    protocol: TCP
+    protocol: UDP
     port: __PORT__
-    targetPort: tcp-port
+    targetPort: udp-port
 
 ---
 #apiVersion: networking.k8s.io/v1

@@ -4,6 +4,7 @@ spec:
       containers:
       - name: controller
         ports:
-         - containerPort: 5060
-           hostPort: 5060
+         - containerPort: __PORT__
+           hostPort: __PORT__
+           protocol: UDP
 
